@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Ortobom - Colchões e Bem-Estar</title>
+    <meta name="description"
+        content="Saldão dos Sonhos. Descontos de até 50% em até 21x e frete grátis para todo Brasil.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <div id="promo-carousel" class="promo-text">
+                <span><i class="fas fa-percent"></i> Até 50% OFF em Colchões Selecionados</span>
+                <span style="display:none;"><i class="fas fa-truck"></i> Frete Grátis nas compras acima de R$300</span>
+                <span style="display:none;"><i class="fas fa-credit-card"></i> Parcele em até 21x sem juros</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav class="container header-content">
+            <div class="header-left">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars-staggered"></i>
+                </button>
+                <a href="/" class="logo">
+                    <img src="imagens/LOGO/Ortobom_branco.png" alt="Ortobom" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Search Bar (Integrated) -->
+            <div class="search-container d-mobile-none">
+                <form action="/buscar" class="search-form">
+                    <input type="text" placeholder="Encontre seu colchão ideal..." class="search-input">
+                    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="header-actions">
+                <a href="#" class="action-btn">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="#" class="action-btn">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a href="#" class="action-btn cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Search Bar (Mobile Only) -->
+        <div class="container search-container-mobile d-desktop-none">
+            <form action="/buscar" class="search-form">
+                <input type="text" placeholder="O que deseja buscar?" class="search-input">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <aside class="mobile-menu" id="mobileMenu">
+        <div class="menu-header glass">
+            <h3>Menu</h3>
+            <button class="close-menu" id="closeMenu"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#"><i class="fas fa-bed"></i> Colchões</a></li>
+            <li><a href="#"><i class="fas fa-box-open"></i> Conjuntos</a></li>
+            <li><a href="#"><i class="fas fa-pillow"></i> Acessórios</a></li>
+            <li><a href="#"><i class="fas fa-tags"></i> Ofertas</a></li>
+            <hr>
+            <li><a href="#"><i class="fas fa-store"></i> Nossas Lojas</a></li>
+            <li><a href="#"><i class="fas fa-headset"></i> Atendimento</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text animate-reveal">
+                    <span class="badge-promo">Oportunidade Única</span>
+                    <h1>Durma nas nuvens com tecnologia Ortobom</h1>
+                    <p>O equilíbrio perfeito entre suporte e maciez. Feito para quem não abre mão de uma noite
+                        revigorante.</p>
+                    <div class="hero-btns">
+                        <a href="#" class="btn-premium">Ver Ofertas</a>
+                        <a href="#" class="btn-outline">Saber Mais</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-reveal" style="animation-delay: 0.2s">
+                    <img src="C:/Users/ester/.gemini/antigravity/brain/4e3f7fdc-10ed-4c3e-bb3c-a7ab17cf184c/premium_mattress_hero_1769713149018.png"
+                        alt="Colchão Premium Ortobom" class="img-fluid rounded-premium">
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Nossas Categorias</h2>
+                <div class="grid grid-md-2 grid-lg-4">
+                    <div class="category-card animate-reveal">
+                        <div class="card-img"><i class="fas fa-bed"></i></div>
+                        <h3>Colchões</h3>
+                    </div>
+                    <div class="category-card animate-reveal" style="animation-delay: 0.1s">
+                        <div class="card-img"><i class="fas fa-layer-group"></i></div>
+                        <h3>Bases e Baús</h3>
+                    </div>
+                    <div class="category-card animate-reveal" style="animation-delay: 0.2s">
+                        <div class="card-img"><i class="fas fa-cloud"></i></div>
+                        <h3>Travesseiros</h3>
+                    </div>
+                    <div class="category-card animate-reveal" style="animation-delay: 0.3s">
+                        <div class="card-img"><i class="fas fa-star"></i></div>
+                        <h3>Acessórios</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Banners -->
+        <section class="banners">
+            <div class="container">
+                <div class="grid grid-md-2">
+                    <div class="banner-card promo-1 animate-reveal">
+                        <div class="banner-content">
+                            <span class="tag">Até 60% OFF</span>
+                            <h3>Saldão de Verão</h3>
+                            <a href="#" class="btn-premium">Aproveitar</a>
+                        </div>
+                    </div>
+                    <div class="banner-card promo-2 animate-reveal" style="animation-delay: 0.1s">
+                        <div class="banner-content">
+                            <span class="tag">Novidade</span>
+                            <h3>Colchão na Caixa</h3>
+                            <a href="#" class="btn-premium">Descobrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-md-2 grid-lg-4">
+                <div class="footer-info">
+                    <img src="imagens/LOGO/LOGO OROTOBOM.png" alt="Ortobom" class="footer-logo">
+                    <p>Mais de 50 anos cuidando do seu sono com excelência e tecnologia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#">Colchões</a></li>
+                        <li><a href="#">Travesseiros</a></li>
+                        <li><a href="#">Bases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Nossas Lojas</a></li>
+                        <li><a href="#">SAC</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ortobom Campinas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
